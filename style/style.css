@@ -34,7 +34,6 @@ button {
     background-color:rgb(101, 3, 3);
     position:absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
     bottom: 0px;
     width: 170px;  
     height: 55px;
