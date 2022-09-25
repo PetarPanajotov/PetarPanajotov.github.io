@@ -1,7 +1,7 @@
 body {
     background-color: rgb(26, 26, 28);
     margin-right: 0px;
-    margin-left: 43px;
+    margin-left: 24px;
 }
 .images figure img{ 
     width: 165px;
@@ -25,6 +25,9 @@ figcaption {
 }
 #button {
     text-align: center;
+    margin-left: 40%;
+    margin-right: 50%;
+    margin-bottom: 5px;
 
 }
 button {
@@ -32,15 +35,23 @@ button {
     font-family: fantasy;
     font-size: large;
     background-color:rgb(101, 3, 3);
-    position:absolute;
-    left: 50%;
-    bottom: 0px;
     width: 170px;  
     height: 55px;
-    white-space: auto;
-    text-align: center;
     border: 1px;
     border-radius: 7px;
     padding: 8px 14px;
-    outline: none;
+}
+@media screen and (orientation: landscape) {
+    #button {
+        position: fixed;
+        bottom: 2%;
+    }    
+}
+@media screen and (orientation: portrait) {
+    #button {
+        position: fixed;
+        bottom: 2%;
+        right: 0%;
+        left: -10%;
+    }
 }
