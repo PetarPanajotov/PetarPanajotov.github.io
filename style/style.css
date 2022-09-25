@@ -1,6 +1,6 @@
 body {
     background-color: rgb(26, 26, 28);
-    margin-right: -43px;
+    margin-right: 0px;
     margin-left: 43px;
 }
 .images figure img{ 
@@ -32,11 +32,13 @@ button {
     font-family: fantasy;
     font-size: large;
     background-color:rgb(101, 3, 3);
-    position: fixed;
-    left: 675px;
-    bottom: 15px;
-    right: 675px;   
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0px;
+    width: 170px;  
     height: 55px;
+    white-space: auto;
     text-align: center;
     border: 1px;
     border-radius: 7px;
