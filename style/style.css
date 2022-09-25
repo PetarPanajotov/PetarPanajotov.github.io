@@ -1,15 +1,16 @@
 body {
-    background-color: rgb(26, 26, 28)
+    background-color: rgb(26, 26, 28);
+    margin-right: -43px;
+    margin-left: 43px;
 }
-.images img {
-    width: 300px;
-    height: 150px;
-    margin: 50x auto;
-    
+.images figure img{ 
+    width: 165px;
+    height: 100px;
 }
 figure {
-    display: inline-block;
-    margin: 5px;
+    margin: 8px;
+    float: left;
+    text-align:center;
 
 }
 figcaption {
@@ -31,5 +32,14 @@ button {
     font-family: fantasy;
     font-size: large;
     background-color:rgb(101, 3, 3);
-
+    position: fixed;
+    left: 675px;
+    bottom: 15px;
+    right: 675px;   
+    height: 55px;
+    text-align: center;
+    border: 1px;
+    border-radius: 7px;
+    padding: 8px 14px;
+    outline: none;
 }
