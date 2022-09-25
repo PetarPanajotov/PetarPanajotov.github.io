@@ -16,11 +16,15 @@ function random() {
 }
 
 function removeFromPool(input) {
-    input = document.getElementById(input)
-    if (input.style.filter !== 'grayscale(1)') {
-        input.style.filter = 'grayscale(1)';
+    let changeColor = document.getElementById(input).lastElementChild;
+    let grayStyleChange = document.getElementById(input);
+    
+    if (grayStyleChange.style.filter !== 'grayscale(1)') {
+        grayStyleChange.style.filter = 'grayscale(1)';
+        changeColor.style.color = 'gray'
     } else  {
-        input.style.filter = '';
+        grayStyleChange.style.filter = '';
+        changeColor.style.color = '';
     }
 }
 
