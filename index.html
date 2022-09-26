@@ -14,6 +14,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="style/style.css">
     <script src="src/script.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body onload="autoIDset()">
     <div class="images">
@@ -55,6 +56,26 @@
         </figure>
         <script> events()</script>
     </div>
+    <video width="100%" height="100%" position = "absolute" controls autoplay muted id="videoId">
+        <source src = "img/ff.mp4" type="video/mp4">
+    </video>
+    <script> function toggleMute() {
+
+        var video=document.getElementById("videoId");
+      
+        if(video.muted){
+          video.muted = false;
+        } else {
+          debugger;
+          video.muted = true;
+          video.play()
+        }
+      
+      }
+      
+      $(document).ready(function(){
+        setTimeout(toggleMute,800);
+      })</script>
     <div id = "button">
         <button onclick="random()" type="button">Generate random!</button>
     </div>
